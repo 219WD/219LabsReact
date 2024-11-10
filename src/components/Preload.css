@@ -1,0 +1,85 @@
+.container.preload {
+    height: 100vh;
+    background: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.container.preload h2 {
+    position: relative;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
+    overflow: hidden;
+    white-space: nowrap;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.rectangle-overlay {
+    position: absolute;
+    background-color: #fff;
+    z-index: 1;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    /* Estado inicial oculto */
+}
+
+.step-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.step-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.step-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.step-3 h2 {
+    color: #fff;
+    text-transform: uppercase;
+    clip-path: polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.step-3 svg path {
+    position: absolute;
+    fill: #fff;
+}
+
+#Capa_1 {
+    width: 300px;
+    height: 300px;
+    transform-origin: center;
+    /* Centro para el scale */
+}
+
+
+.rectangle-overlay,
+.step-2,
+.step-3 {
+    position: absolute;
+}
+
+.step-3 svg {
+    transition: fill 1s ease, transform 1.5s ease;
+}

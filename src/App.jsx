@@ -1,35 +1,53 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { Suspense, lazy, useEffect } from 'react';
+import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
+import { initLenis } from './hooks/useLenis'
+
+const HomeScreen = lazy(() => import('./pages/HomeScreen'));
 
 function App() {
-  const [count, setCount] = useState(0)
+  useEffect(() => {
+    // Inicializar Lenis cuando se monta el componente
+    const cleanupLenis = initLenis();
 
+    // Limpiar al desmontar el componente
+    return cleanupLenis;
+  }, []);
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <BrowserRouter>
+      <Helmet>
+        <title>219Labs | Agencia de Diseño y Desarrollo Web | @CanepaDev</title>
+        <link rel="icon" type="image/svg+xml" href="/src/assets/site-logo.png" />
+        <meta
+          name="description"
+          content="Agencia de desarrollo web, software y marketing digital de Tucuman. ¡Transformamos tu negocio digitalmente!"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "219Labs",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Mate de Luna 1269",
+              "addressLocality": "Tucumán",
+              "addressRegion": "T",
+              "postalCode": "4000",
+              "addressCountry": "AR",
+            },
+            "telephone": "+5493816671884",
+            "description":
+              "219LABS ha estado a la vanguardia de la innovación digital, creando productos web3 de última generación y brindando soporte de diseño excepcional tanto para startups como para grandes corporaciones.",
+            "url": "https://219labs.com/",
+          })}
+        </script>
+      </Helmet>
+      <Routes>
+        <Route path="/" element={<HomeScreen />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
