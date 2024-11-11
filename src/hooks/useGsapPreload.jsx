@@ -1,8 +1,7 @@
-// src/hooks/useGsap.js
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const useGsap = (imgRefs) => {
+const useGsapPreload = (imgRefs) => {
   useEffect(() => {
     const splitTextIntoSpans = (selector) => {
       const element = document.querySelector(selector);
@@ -107,7 +106,7 @@ const useGsap = (imgRefs) => {
         x: "0%",      // Termina en su posición original
         duration: 1.5, 
         ease: "power2.inOut",
-        delay: 6.5 
+        delay: 7 
       }
     );
 
@@ -152,7 +151,7 @@ const useGsap = (imgRefs) => {
     });
   }, [imgRefs]);
 
-  return null; // Este hook no necesita devolver nada
+  return null; 
 };
 
-export default useGsap;
+export default useGsapPreload;

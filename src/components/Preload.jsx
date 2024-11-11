@@ -1,16 +1,14 @@
 // src/components/Preload.js
 import React, { useRef, useEffect } from 'react';
 import './Preload.css';
-import useGsap from '../hooks/useGsap';
+import useGsapPreload from '../hooks/useGsapPreload';
 import img1 from '../assets/business-5475661_1280.jpg';
 import img2 from '../assets/business-5475659_1280.jpg';
 import img3 from '../assets/business-5475663_1280.jpg';
 
 const Preload = () => {
-  const imgRefs = useRef([]); // Creamos un array de referencias para las imágenes
-
-  // Llamamos al hook que maneja la animación y le pasamos las referencias
-  useGsap(imgRefs);
+  const imgRefs = useRef([]);
+  useGsapPreload(imgRefs);
 
   return (
     <div className="container preload">
