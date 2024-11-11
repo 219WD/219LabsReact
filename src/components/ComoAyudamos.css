@@ -1,0 +1,79 @@
+.comoAyuda {
+    width: 100%;
+    height: max-content;
+    background: #000;
+    position: relative;
+    padding-top: 2rem;
+  }
+  
+  .comoAyuda-header {
+    width: 100%;
+    padding: 5em 0 10em 0;
+    display: flex;
+  }
+  
+  .comoAyuda-col {
+    padding: 1em;
+  }
+  
+  .comoAyuda-col:nth-child(1) {
+    flex: 2;
+  }
+  
+  .comoAyuda-col:nth-child(2) {
+    flex: 4;
+  }
+  
+  .comoAyuda-col h3 {
+    width: 85%;
+    color: rgba(255, 255, 255, 0.125);
+    transition: color 0.3s;
+    font-family: "Unbounded", sans-serif;
+  }
+  
+  .comoAyuda-copy {
+    width: 50%;
+    padding: 5em 1em 5em 1em;
+    text-transform: uppercase;
+  }
+
+  .callout {
+    width: max-content;
+    padding: 0.5em 1em;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    margin-bottom: 2em;
+  }
+
+  .img-1 {
+    width: 500px;
+    position: absolute;
+    top: 12rem;
+    left: 0;
+  }
+  
+  @media (max-width: 900px) {
+    .comoAyuda-copy {
+      width: 100%;
+    }
+  
+    .comoAyuda-header {
+      padding: 5em 0 5em 0;
+      flex-direction: column;
+    }
+  
+    .comoAyuda-col h3 {
+      width: 100%;
+      font-size: 35px;
+    }
+  
+    .comoAyuda-copy {
+      padding: 5em 1em 10em 1em;
+      font-size: 1.2rem;
+    }
+  
+    .callout {
+      font-size: 1.2rem;
+    }
+  }

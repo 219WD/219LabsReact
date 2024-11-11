@@ -1,0 +1,24 @@
+.container.about{ 
+    background: #000;
+    flex-direction: row;
+    gap: 5rem;
+    padding-top: 5rem;
+    position: relative;
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.txt .parrafoAbout {
+    width: 30vw;
+    font-size: 1.5rem;
+}
+
+.img-2 {
+    width: 400px;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+  }
