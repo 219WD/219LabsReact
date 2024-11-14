@@ -14,7 +14,7 @@ const useAboutTeam = () => {
             scrollTrigger: {
                 trigger: ".container.tripleSection",
                 start: "top 50%",
-                end: "+=125%",
+                end: "+=200%",
                 scrub: 0.5,
             },
         }).set(
