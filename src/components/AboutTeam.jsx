@@ -1,7 +1,7 @@
 import React from 'react'
 import './AboutTeam.css'
 import useAboutTeam from '../hooks/useGsapAboutTeam'
-import distortion from '../assets/7.png'
+import distortion from '../assets/7.webp'
 
 const AboutTeam = () => {
     useAboutTeam();

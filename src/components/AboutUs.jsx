@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import logo from '../assets/site-logo.png'
+import logo from '../assets/site-logo.webp'
 import www from '../assets/1.svg'
 import useAboutUs from '../hooks/useGsapAboutUs.jsx';
 

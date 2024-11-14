@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 import './Footer.css';
-import grad from '../assets/grad.png';
+import grad from '../assets/grad.webp';
 
 const Footer = () => {
     const formRef = useRef(null);

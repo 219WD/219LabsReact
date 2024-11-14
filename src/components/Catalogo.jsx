@@ -1,9 +1,9 @@
 import React from 'react';
 import './Catalogo.css';
-import fotoCatalog from '../assets/Mockup.png'
+import fotoCatalog from '../assets/Mockup.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle } from '@fortawesome/free-solid-svg-icons';
-import paintCatalog from '../assets/7.png'
+import paintCatalog from '../assets/7.webp'
 import useCatalog from '../hooks/useGsapCatalog'
 
 const Catalogo = () => {

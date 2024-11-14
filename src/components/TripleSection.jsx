@@ -1,8 +1,8 @@
 import React from 'react'
 import './TripleSection.css'
-import photo1 from '../assets/hurricane.png'
-import photo2 from '../assets/MacBook Air Mockup.png'
-import photo3 from '../assets/mac2.png'
+import photo1 from '../assets/hurricane.webp'
+import photo2 from '../assets/MacBook-Air-Mockup.webp'
+import photo3 from '../assets/mac2.webp'
 import useTriple from '../hooks/useGsapTripleSection.jsx'
 
 const TripleSection = () => {

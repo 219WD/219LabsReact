@@ -3,7 +3,7 @@ import './Technologies.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFingerprint, faLayerGroup, faFolder, faShieldAlt, faCrop, faCloud, faCube } from '@fortawesome/free-solid-svg-icons';
 import { faJs } from '@fortawesome/free-brands-svg-icons';
-import bgTech from '../assets/17.png'
+import bgTech from '../assets/17.webp'
 import useTech from '../hooks/useGsapTech.jsx'
 
 

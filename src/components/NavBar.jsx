@@ -10,7 +10,7 @@ const NavBar = () => {
         <div className='container navBar'>
             <nav>
                 <div className="logo">
-                    <a className="a-nav" href="#hero"><img src="./assets/site-logo.png" alt="" /></a>
+                    <a className="a-nav" href="#hero"><img src="./assets/site-logo.webp" alt="" /></a>
                 </div>
 
                 <div className="clock">

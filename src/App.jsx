@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Helmet>
         <title>219Labs | Agencia de Diseño y Desarrollo Web | @CanepaDev</title>
-        <link rel="icon" type="image/svg+xml" href="/src/assets/site-logo.png" />
+        <link rel="icon" type="image/svg+xml" href="/src/assets/site-logowebp" />
         <meta
           name="description"
           content="Agencia de desarrollo web, software y marketing digital de Tucuman. ¡Transformamos tu negocio digitalmente!"

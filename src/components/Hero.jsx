@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
 import './Hero.css'
-import Grad from '../assets/grad.png'
+import Grad from '../assets/grad.webp'
 
 const Hero = () => {
     useEffect(() => {

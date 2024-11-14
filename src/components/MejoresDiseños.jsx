@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import './MejoresDiseños.css';
-import grad from '../assets/grad.png';
+import grad from '../assets/grad.webp';
 import useGsapProjects from '../hooks/useGsapProjects';
 import projects from '../utils/Data';
 
