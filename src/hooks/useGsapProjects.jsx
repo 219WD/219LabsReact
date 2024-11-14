@@ -21,7 +21,7 @@ const useGsapProjects = (containerRef) => {
             opacity: 1,
             scrollTrigger: {
               trigger: card,
-              start: "top 80%",
+              start: "top 100%",
               end: "top 20%",
               scrub: 1,
               onEnter: () => {
