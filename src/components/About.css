@@ -1,4 +1,4 @@
-.container.about{ 
+.container.about {
     background: #000;
     flex-direction: row;
     gap: 5rem;
@@ -12,8 +12,9 @@
 }
 
 .txt .parrafoAbout {
-    width: 30vw;
+    width: 50vw;
     font-size: 1.5rem;
+    z-index: 2;
 }
 
 .img-2 {
@@ -21,4 +22,33 @@
     position: absolute;
     top: 5rem;
     right: 0;
-  }
+    will-change: transform;
+}
+
+@media (max-width: 900px) {
+    .container.about {
+        flex-direction: column;
+        padding: 5rem 0;
+    }
+
+    .LogoAbout {
+        width: 300px;
+        z-index: 222;
+    }
+
+    .container.about .callout {
+        z-index: 222;
+    }
+
+    .img-2 {
+        width: 300px;
+        position: absolute;
+        top: 10rem;
+        right: 0;
+        will-change: transform;
+    }
+
+    .txt .parrafoAbout {
+        width: 85vw;
+    }
+}

@@ -22,6 +22,7 @@
     z-index: 1;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     /* Estado inicial oculto */
+    will-change: transform;
 }
 
 .step-2 {

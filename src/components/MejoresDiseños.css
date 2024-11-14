@@ -1,0 +1,194 @@
+.container.mejoresDiseños {
+    background: #000;
+    position: relative;
+}
+
+.promo {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.promo-bg {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.promo-bg img {
+    width: 100%;
+}
+
+.promo-header {
+    position: relative;
+    z-index: 1;
+}
+
+.promo h1,
+.promo h2 {
+    color: #fff;
+    font-family: "Unbounded", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 100%;
+    margin: 0;
+}
+
+.promo h2 {
+    font-size: 3vw;
+    letter-spacing: 0;
+    line-height: 105%;
+}
+
+.promo h1 {
+    margin: 0;
+    font-size: 10vw;
+}
+
+@media (max-width: 900px) {
+    .promo {
+        height: 70vh;
+    }
+
+    .promo h2 {
+        font-size: 2rem;
+    }
+
+    .promo h1 {
+        font-size: 3.5rem;
+    }
+}
+
+.card {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+section.card {
+    width: 100vw;
+    height: 100vh;
+}
+
+.card.scroll {
+    position: relative;
+    will-change: transform, filter;
+}
+
+.project {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 85%;
+    height: 500px;
+    display: flex;
+    will-change: transform, filter;
+    /* Para optimizar las animaciones de enfoque */
+    transform-origin: center center;
+}
+
+.project-copy {
+    position: relative;
+    flex: 1.75;
+    border-radius: 12px;
+    padding: 2em;
+    background: #202020;
+}
+
+.project-img {
+    flex: 3;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    will-change: transform, filter;
+    /* Prepara la imagen para transformaciones y filtros */
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project-header h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Unbounded", sans-serif;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.project-header p {
+    padding: 0 !important;
+}
+
+.project-copy p {
+    padding: 1em 0;
+}
+
+.project-cta {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+.project-cta-row {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+.cta {
+    flex: 1;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.125);
+}
+
+.cta a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+    .project {
+        flex-direction: column;
+    }
+
+    .project-header h3 {
+        font-size: 24px;
+    }
+    .project-copy p {
+        padding: 2rem 0;
+    }
+    .project-cta p {
+        display: none;
+    }
+}

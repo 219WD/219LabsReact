@@ -1,0 +1,93 @@
+.container.catalogo {
+    background: #000;
+    position: relative;
+}
+
+.catalog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.txt-catalog {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+}
+
+.txt-catalog h3 {
+    width: 85%;
+    color: rgba(255, 255, 255, 0.125);
+    transition: color 0.3s;
+    font-family: "Unbounded", sans-serif;
+    will-change: transform;
+}
+
+.catalog img {
+    width: 60vw;
+    z-index: 2;
+}
+
+.txt-catalog button {
+    width: 50%;
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: #ff6b00;
+    background: linear-gradient(to right, #fc002d, #ff6b00);
+    border: none;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+
+.txt-catalog button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.icon-catalog {
+    color: #fff;
+    transform: rotate(0);
+    left: 0.25em;
+    font-size: 8px;
+}
+
+.catalog .paintCatalog {
+    position: absolute;
+    top: 0;
+    right: -100px; 
+    width: 700px;
+    z-index: 0;
+}
+
+
+@media (max-width: 900px) {
+    .container.catalogo {
+        padding: 0 2rem;
+    }
+    .catalog {
+        flex-direction: column;
+    }
+    .txt-catalog h3 {
+        width: 100%;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+    }
+    .txt-catalog p {
+        z-index: 222;
+    }
+    .txt-catalog button {
+        width: 100%;
+        z-index: 222;
+    }
+    .catalog img {
+        width: 90vw;
+        z-index: 2;
+    }
+}
