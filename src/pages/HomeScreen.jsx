@@ -15,18 +15,15 @@ import Saas from '../components/Saas';
 import Footer from '../components/Footer';
 
 const HomeScreen = () => {
-  const [loading, setLoading] = useState(!localStorage.getItem('preloadSeen'));
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (loading) {
-      const timer = setTimeout(() => {
-        setLoading(false);
-        localStorage.setItem('preloadSeen', 'true'); // Marcamos el preload como visto
-      }, 12000);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 12000);
 
-      return () => clearTimeout(timer);
-    }
-  }, [loading]);
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <div className="container">
