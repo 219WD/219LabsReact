@@ -23,6 +23,8 @@ function App() {
           name="description"
           content="Agencia de desarrollo web, software y marketing digital de Tucuman. ¡Transformamos tu negocio digitalmente!"
         />
+        <meta name="keywords" content="219Labs, Agencia Digital, Tucuman, Desarrollo de Software, Paginas Web" />
+        <meta name="author" content="219Labs CanepaDev" />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
@@ -38,7 +40,7 @@ function App() {
             },
             "telephone": "+5493816671884",
             "description":
-              "219LABS ha estado a la vanguardia de la innovación digital, creando productos web3 de última generación y brindando soporte de diseño excepcional tanto para startups como para grandes corporaciones.",
+              "Agencia de desarrollo web, software y marketing digital de Tucuman. 219LABS ha estado a la vanguardia de la innovación digital, creando productos web3 de última generación y brindando soporte de diseño excepcional tanto para startups como para grandes corporaciones.",
             "url": "https://219labs.com/",
           })}
         </script>

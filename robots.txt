@@ -1,0 +1,5 @@
+# Permitir el acceso a todas las páginas para todos los rastreadores
+User-agent: *
+
+# Indicar el Sitemap para un mejor rastreo
+Sitemap: https://219labstuc.vercel.app/
