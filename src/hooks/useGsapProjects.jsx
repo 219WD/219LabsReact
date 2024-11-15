@@ -6,10 +6,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 const useGsapProjects = (containerRef) => {
   useEffect(() => {
+    // Verifica si el ancho de la pantalla es mayor a 768px (evita efectos en móviles)
+    const isDesktop = window.innerWidth > 768;
+
+    if (!isDesktop) return; // Si es un dispositivo móvil, no aplicar efectos
+
     const container = containerRef.current;
     const cards = container ? container.querySelectorAll(".card") : [];
-    
-    // Verifica si hay tarjetas disponibles antes de aplicar GSAP
+
     if (cards.length > 0) {
       cards.forEach((card, index) => {
         gsap.fromTo(
@@ -39,8 +43,12 @@ const useGsapProjects = (containerRef) => {
         );
       });
     }
+
+    // Limpia los efectos de GSAP al desmontar el componente
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+    };
   }, [containerRef]);
-  
 };
 
 export default useGsapProjects;
