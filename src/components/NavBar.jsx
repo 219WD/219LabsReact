@@ -3,6 +3,7 @@ import './NavBar.css';
 import useGsapNav from '../hooks/useGsapNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircle, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Descargar } from './Descargar';
 
 const NavBar = () => {
     useGsapNav();
@@ -61,6 +62,7 @@ const NavBar = () => {
                         <span className="span">05</span>
                         <span className="span">Contacto</span>
                     </a>
+                    <Descargar />
                 </div>
             </div>
         </div>

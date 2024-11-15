@@ -1,0 +1,16 @@
+{
+    "name": "219Labs",
+    "short_name": "219Labs",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#272A29",
+    "description": "Agencia digital especializada en desarrollo web, software y marketing digital. ¡Transformamos tu negocio digitalmente!",
+    "icons": [
+      {
+        "src": "/site-logo.png", 
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
