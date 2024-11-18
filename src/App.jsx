@@ -17,13 +17,10 @@ function App() {
   return (
     <BrowserRouter>
       <Helmet>
-        <title>219Labs | Agencia de Diseño y Desarrollo Web | @CanepaDev</title>
+        <title>Agencia Digital 219Labs | Diseño, Desarrollo Web y Marketing en Tucumán</title>
         <link rel="icon" type="image/svg+xml" href="/src/assets/site-logowebp" />
-        <meta
-          name="description"
-          content="Agencia de desarrollo web, software y marketing digital de Tucuman. ¡Transformamos tu negocio digitalmente!"
-        />
-        <meta name="keywords" content="219Labs, Agencia Digital, Tucuman, Desarrollo de Software, Paginas Web" />
+        <meta name="description" content="219Labs es una agencia digital en Tucumán especializada en desarrollo web, software y marketing digital. Transformamos tu negocio digitalmente con soluciones innovadoras y creativas." />
+        <meta name="keywords" content="Agencia Digital Tucumán, Diseño y Desarrollo Web, Marketing Digital, Software y Desarrollo Web" />
         <meta name="author" content="219Labs CanepaDev" />
         <script type="application/ld+json">
           {JSON.stringify({
@@ -41,7 +38,7 @@ function App() {
             "telephone": "+5493816671884",
             "description":
               "Agencia de desarrollo web, software y marketing digital de Tucuman. 219LABS ha estado a la vanguardia de la innovación digital, creando productos web3 de última generación y brindando soporte de diseño excepcional tanto para startups como para grandes corporaciones.",
-            "url": "https://219labs.com/",
+            "url": "https://219labstuc.vercel.app/",
           })}
         </script>
       </Helmet>
