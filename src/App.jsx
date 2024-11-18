@@ -18,7 +18,7 @@ function App() {
     <BrowserRouter>
       <Helmet>
         <title>Agencia Digital 219Labs | Diseño, Desarrollo Web y Marketing en Tucumán</title>
-        <link rel="icon" type="image/webp+xml" href="/src/assets/site-logo.webp" />
+        <link rel="icon" type="image/png" href="/public/site-logo.png" />
         <meta name="description" content="219Labs es una agencia digital en Tucumán especializada en desarrollo web, software y marketing digital. Transformamos tu negocio digitalmente con soluciones innovadoras y creativas." />
         <meta name="keywords" content="Agencia Digital Tucumán, Diseño y Desarrollo Web, Marketing Digital, Software y Desarrollo Web" />
         <meta name="author" content="219Labs CanepaDev" />
