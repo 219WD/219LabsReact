@@ -25,12 +25,17 @@ const useGsapPreload = (imgRefs) => {
     const h2Element = document.querySelector('.container.preload h2');
     const rectangleOverlay = document.querySelector('.rectangle-overlay');
     if (h2Element && rectangleOverlay) {
+      // Recalcular el ancho y alto después de cualquier actualización en el DOM
+      const computedStyle = window.getComputedStyle(h2Element);
+      const paddingHorizontal = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+      const paddingVertical = parseFloat(computedStyle.paddingTop) + parseFloat(computedStyle.paddingBottom);
+    
       const { width, height } = h2Element.getBoundingClientRect();
-      rectangleOverlay.style.width = `${width}px`;
-      rectangleOverlay.style.height = `${height}px`;
+      rectangleOverlay.style.width = `${width + paddingHorizontal}px`;
+      rectangleOverlay.style.height = `${height + paddingVertical}px`;
       rectangleOverlay.style.left = `${h2Element.offsetLeft}px`;
       rectangleOverlay.style.top = `${h2Element.offsetTop}px`;
-    }
+    }    
 
     // Animación de aparición de letras desde abajo
     gsap.fromTo(
