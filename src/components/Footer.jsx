@@ -35,7 +35,7 @@ const Footer = () => {
         <div className='container footer'>
             <footer id="contact">
                 <div className="footer-bg">
-                    <img src={grad} alt="" />
+                    <img src={grad} alt="Gradiant" />
                 </div>
                 <div className="footer-header">
                     <h2>Let's</h2>

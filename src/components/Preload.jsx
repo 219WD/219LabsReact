@@ -15,9 +15,9 @@ const Preload = () => {
       <div className="rectangle-overlay"></div>
       <h2>Loading</h2>
       <div className="step-2">
-        <img ref={(el) => imgRefs.current[0] = el} src={img1} alt="Perfume" />
-        <img ref={(el) => imgRefs.current[1] = el} src={img2} alt="Perfume" />
-        <img ref={(el) => imgRefs.current[2] = el} src={img3} alt="Perfume" />
+        <img ref={(el) => imgRefs.current[0] = el} src={img1} alt="w3" />
+        <img ref={(el) => imgRefs.current[1] = el} src={img2} alt="w3" />
+        <img ref={(el) => imgRefs.current[2] = el} src={img3} alt="w3" />
       </div>
       <div className="step-3">
         <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 276.05 242.22" width={300}>

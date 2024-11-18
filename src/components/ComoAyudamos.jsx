@@ -20,7 +20,7 @@ const ComoAyudamos = () => {
                         </h3>
                     </div>
                 </div>
-                <img src={Circulo} alt="" className='img-1' />
+                <img src={Circulo} alt="w3" className='img-1' />
             </section>
         </div>
     );

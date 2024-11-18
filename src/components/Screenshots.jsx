@@ -13,7 +13,7 @@ const Screenshots = () => {
                     <div className="features-row">
                         <div className="features-item">
                             <div className="features-icon">
-                                <img src={feature1} alt="" />
+                                <img src={feature1} alt="Charla whatsapp" />
                             </div>
                             <div className="features-title">
                                 <h2>DE UNA GRAN IDEA A UN GRAN PROYECTO</h2>
@@ -26,7 +26,7 @@ const Screenshots = () => {
                         </div>
                         <div className="features-item">
                             <div className="features-icon">
-                                <img src={feature2} alt="" />
+                                <img src={feature2} alt="Charla whatsapp" />
                             </div>
                             <div className="features-title">
                                 <h2>INFORMACIÓN SEMANAL DETALLADA</h2>
@@ -41,7 +41,7 @@ const Screenshots = () => {
                     <div className="features-row">
                         <div className="features-item">
                             <div className="features-icon">
-                                <img src={feature3} alt="" />
+                                <img src={feature3} alt="Charla whatsapp" />
                             </div>
                             <div className="features-title">
                                 <h2>PROGRESO SEMANAL CONSTANTE</h2>
@@ -54,7 +54,7 @@ const Screenshots = () => {
                         </div>
                         <div className="features-item">
                             <div className="features-icon">
-                                <img src={feature4} alt="" />
+                                <img src={feature4} alt="Charla whatsapp" />
                             </div>
                             <div className="features-title">
                                 <h2>SEGUIMIENTO DEL PROGRESO SEMANAL</h2>
