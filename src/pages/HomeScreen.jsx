@@ -13,6 +13,7 @@ import MejoresDiseños from '../components/MejoresDiseños';
 import Screenshots from '../components/Screenshots';
 import Saas from '../components/Saas';
 import Footer from '../components/Footer';
+import Combos from '../components/Combos';
 
 const HomeScreen = () => {
   const [loading, setLoading] = useState(true);
@@ -34,6 +35,7 @@ const HomeScreen = () => {
       <AboutTeam />
       <Technologies />
       <TripleSection />
+      <Combos />
       <Catalogo />
       <MejoresDiseños />
       <Saas />

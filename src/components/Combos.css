@@ -1,0 +1,12 @@
+.container.combos {
+    background: #000;
+    position: relative;
+}
+
+.catalog .paintComb {
+    position: absolute;
+    top: 0;
+    left: -100px; 
+    width: 600px;
+    z-index: 0;
+}
