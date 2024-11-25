@@ -26,7 +26,7 @@ const NavBar = () => {
                         <div className="contact-icon">
                             <FontAwesomeIcon icon={faCircle} />
                         </div>
-                        <a className="a-nav" href="https://presentationcard2.vercel.app/" target="_blank" rel="noopener noreferrer">Hablemos</a>
+                        <a className="a-nav" href="https://calendar.app.google/81VeRN9EiTqGqBVf9" target="_blank" rel="noopener noreferrer">Hablemos</a>
                     </div>
 
                     <div className="menu">
