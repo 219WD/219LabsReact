@@ -38,7 +38,7 @@ function App() {
             "telephone": "+5493816671884",
             "description":
               "Agencia de desarrollo web, software y marketing digital de Tucuman. 219LABS ha estado a la vanguardia de la innovación digital, creando productos web3 de última generación y brindando soporte de diseño excepcional tanto para startups como para grandes corporaciones.",
-            "url": "https://219labstuc.vercel.app/",
+            "url": "https://219labs.vercel.app/",
           })}
         </script>
       </Helmet>
