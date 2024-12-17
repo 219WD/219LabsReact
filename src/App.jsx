@@ -1,6 +1,7 @@
 import React, { Suspense, lazy, useEffect } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ReactPixel from 'react-facebook-pixel';
 import { Helmet } from 'react-helmet';
 import { initLenis } from './hooks/useLenis'
 
@@ -14,6 +15,29 @@ function App() {
     // Limpiar al desmontar el componente
     return cleanupLenis;
   }, []);
+
+  useEffect(() => {
+    // 1. Inicializar el Pixel de Facebook
+    const pixelOptions = {
+      autoConfig: true,
+      debug: false, // Coloca en true para ver la consola de debug
+    };
+    ReactPixel.init('1712217532972119', {}, pixelOptions);
+    ReactPixel.pageView(); // Rastrear vistas de página
+
+    // 2. Evento para rastrear el scroll
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY || window.pageYOffset;
+      ReactPixel.trackCustom('ScrollEvent', { scrollPosition });
+    };
+    window.addEventListener('scroll', handleScroll);
+
+    // 3. Limpiar los eventos al desmontar
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <BrowserRouter>
       <Helmet>
